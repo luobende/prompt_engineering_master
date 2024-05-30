@@ -35,6 +35,48 @@ Given the fields `context`, `question`, produce the fields `answer`.
 {rules_and_constrains}
 ---
 
+
+#### Google
+
+```
+< Objective and persona (optional) >
+You are a [XYZ expert | ABC specialist | math teacher | etc.]. Your task is to...
+
+< Instructions >
+To complete the task, you need to follow these steps:
+1.
+2.
+...
+
+------------- Optional Components ------------
+[link](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies?hl=zh-cn)
+< Constraints >
+DOs and DONTs for the following aspects
+1. DOs
+2. NOT DOs
+...
+
+< Context >
+The provided context
+
+< Output format >
+The output format must be
+1.
+2.
+...
+
+< Few-shot examples and reasoning steps >
+Here we provide some examples:
+1. Example #1
+    Input:
+    Thoughts:
+    Ouptput:
+...
+
+< Recap >
+Re-emphasize the key aspects of the prompt, especially the constraints, output format, etc.
+```
+
 Follow the following format.
 
 Context: ${context}
