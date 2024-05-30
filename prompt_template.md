@@ -81,7 +81,7 @@ Each step needs to be based on the previous content.
 
 
 #### Google
-
+[link](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies?hl=zh-cn)
 ```
 < Objective and persona (optional) >
 You are a [XYZ expert | ABC specialist | math teacher | etc.]. Your task is to...
@@ -93,7 +93,7 @@ To complete the task, you need to follow these steps:
 ...
 
 ------------- Optional Components ------------
-[link](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies?hl=zh-cn)
+
 < Constraints >
 DOs and DONTs for the following aspects
 1. DOs
