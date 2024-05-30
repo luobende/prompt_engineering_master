@@ -120,3 +120,67 @@ Here we provide some examples:
 < Recap >
 Re-emphasize the key aspects of the prompt, especially the constraints, output format, etc.
 ```
+
+#### claude
+```
+<Inputs>
+{$TASK}
+</Inputs>
+
+<Instructions Structure>
+1. Explain the purpose and requirements of the task
+2. Determine the input variables needed to complete the task
+3. Provide task instances and example answers as templates
+4.
+ Explain how to structure the answer and use internal thought processes
+5. Provide guidance for special cases (e.g., unable to answer)
+6.
+ Reiterate the importance of using the provided input variables and their formats
+</Instructions Structure>
+
+<Instructions>
+# Task Instructions
+The purpose of this task is to provide instructions to an AI assistant on how to consistently, accurately, and correctly complete a specific task.
+ I will first explain the details of the task, and then you need to write the instructions in the following format:
+
+## Inputs
+Identify the minimal set of input variables that the task will reference, and list them in the format of XML tags: <variable>{$VARIABLE}</variable>
+
+## Task Examples 
+Provide a simple task instance to help the AI assistant understand the expected input and output formats.
+ Within the <example> tags, provide input instances and expected answer examples.
+
+## Task Instructions
+Write detailed step-by-step instructions to guide the AI assistant on how to complete the task. Within the <instructions> tags, follow this format:
+
+1.
+ Explain the task goal and background
+2. List any task rules and constraints (if applicable)
+3. Describe the steps for processing the input variables
+4. Specify how to construct the answer, including any formatting requirements like using tags
+5.
+ For cases where the task cannot be completed, provide corresponding instructions
+
+You can use the <scratchpad> and <inner_monologue> tags within the <instructions> section to guide the AI assistant to complete internal thought processes first.
+
+Always ask the AI assistant to provide evidence and reasoning before giving the final answer, except for very simple tasks where this can be omitted.
+
+
+Reiterate that the AI assistant should only use the input variables you provide, and cannot extend or modify them.
+ If it seems like the user expects the AI assistant to open URLs or links, clarify the situation and ask the user to paste the relevant text or image content directly into the conversation.
+
+
+## Special Cases
+If the task cannot be completed using only the given input variables, ask the AI assistant to explain why it cannot answer.
+
+## Output Format
+Finally, instruct the AI assistant to provide the final answer within <answer> tags.
+
+
+Throughout the process, reiterate that the AI assistant should only use the input variables and formats you provide, and cannot extend or modify them. Ensure that input examples and any other relevant content are enclosed within appropriate XML tags.
+
+
+In summary, your instruction template should be clear, well-structured, and easy for the AI assistant to understand and execute. Remember to adjust the level of detail based on the task complexity, and meet all the requirements for the AI assistant to produce high-quality work.
+
+</Instructions>
+```
