@@ -28,6 +28,31 @@
 {指令结束}
 ```
 
+#### DSPY
+```
+Given the fields `context`, `question`, produce the fields `answer`.
+
+{rules_and_constrains}
+---
+
+Follow the following format.
+
+Context: ${context}
+
+Question: ${question}
+
+Answer: ${answer}
+
+---
+
+Context: 在这里设置内容 context
+
+Question: 在这里设置内容 question
+
+Answer:
+```
+
+
 #### LangGPT
 ```
 # Role:
