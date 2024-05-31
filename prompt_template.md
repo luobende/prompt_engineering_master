@@ -120,3 +120,58 @@ Here we provide some examples:
 < Recap >
 Re-emphasize the key aspects of the prompt, especially the constraints, output format, etc.
 ```
+
+
+#### claude-style
+```
+You will be designing a marketing strategy for launching a new product. Here is a description of the
+product:
+
+<product_description>
+{$PRODUCT_DESCRIPTION}
+</product_description>
+
+The target market for this product is:
+
+<target_market>
+{$TARGET_MARKET}
+</target_market>
+
+The product's key unique selling points are:
+
+<unique_selling_points>
+{$UNIQUE_SELLING_POINTS}
+</unique_selling_points>
+
+To develop an effective marketing strategy, consider the following:
+
+- The key messages and value proposition to communicate to the target market
+- The most effective marketing channels and tactics to reach and engage the target audience
+- How to differentiate the product from competitors
+- Pricing and promotional strategies
+- Ideas for creative marketing campaigns and content
+
+First, brainstorm some initial ideas for the marketing strategy in a <brainstorming> section.
+Consider the target market, unique selling points, potential marketing channels and tactics, key
+messages, and campaign ideas. Don't worry about fully developing the ideas yet, just get your
+initial thoughts down.
+
+After brainstorming, develop your ideas into a cohesive marketing strategy in a <strategy> section.
+Your strategy should include:
+
+- Key marketing messages and product positioning
+- Priority marketing channels and tactics to utilize (e.g. social media, content marketing,
+advertising, events, etc.)
+- High-level ideas for marketing campaigns, content, and creative
+- Pricing and promotional strategies
+- How the strategy ties back to the target market and unique selling points
+
+Provide a clear, logical rationale for your strategic recommendations. The strategy should be
+well-tailored to the given product, target market, and unique selling points.
+
+Feel free to make reasonable assumptions as needed for details not provided in the product
+description, target market, and selling points. Do not make up any additional product features or
+selling points not explicitly stated.
+
+Please begin by brainstorming ideas before providing your final marketing strategy.
+```
